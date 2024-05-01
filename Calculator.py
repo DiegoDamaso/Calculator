@@ -8,17 +8,19 @@ while continue_calculating is True:
         num1 = int(input("Enter the 1st number: "))
     except:
         print("Invalid input. Enter a number.")
+        continue
     try:
         num2 = int(input("Enter the 2st number: "))
     except:
         print("Invalid input. Enter a number.")
+        continue
 
     if operator == "+":
         result = num1 + num2
         print(round(result, 3))
     elif operator == "-":
-        result == num1 - num2
-        print(round(result, 3))
+            result = num1 - num2
+            print(round(result, 3))
     elif operator == "*":
         result = num1 * num2
         print(round(result, 3))
